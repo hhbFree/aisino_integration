@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <!--https://blog.csdn.net/sinat_24048051/article/details/77531834-->
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.min.js}"></script>
+
+    <script type="text/javascript" th:src="@{/bootstrap_table/Bootstrap_table_1.12.1/src/bootstrap-table.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/bootstrap_table/Bootstrap_table_1.12.1/src/bootstrap-table.css}"/>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" id="email" placeholder="Email" class="form-control">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="userName" placeholder="name" class="form-control">
+                </div>
+                <button type="button" id="search" class="btn btn-success">搜索</button>
+                <button type="button" id="insert" data-target="#myModal" data-toggle="modal" class="btn btn-success">
+                    新增
+                </button>
+            </form>
+        </div><!--/.navbar-collapse -->
+    </div>
+</nav>
+
+<!-- 按钮触发模态框 -->
+<div class="jumbotron">
+
+    <!-- 模态框（Modal） -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">新增用户</h4>
+                </div>
+                <div class="modal-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="user_name">名称</label>
+                            <input type="text" class="form-control" id="user_name" placeholder="请输入名称">
+                            <label for="user_email">email</label>
+                            <input type="Email" class="form-control" id="user_email" placeholder="请输入email">
+                            <label for="password">密码</label>
+                            <input type="text" class="form-control" id="password" placeholder="请输入密码">
+                            <label for="phone">电话</label>
+                            <input type="text" class="form-control" id="phone" placeholder="请输入电话">
+
+                        </div>
+
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                    <button type="submit" id="save" class="btn btn-primary">提交</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal -->
+    </div>
+</div>
+<div class="container">
+    <hr>
+    <table id="grid"></table>
+
+    <footer>
+        <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+</div> <!-- /container -->
+</body>
+<script type="application/javascript">
+    $(function () {
+        var $table;
+        InitMainTable();
+
+    })
+
+    $(document).ready(function () {
+        $('#search').click(function () {
+            var params = $('#grid').bootstrapTable('getOptions')
+            params.queryParams = function (params) {
+                //定义参数
+                var search = {};
+                //遍历form 组装json
+                $.each($("#searchform").serializeArray(), function (i, field) {
+                    console.info(field.name + ":" + field.value + " ");
+                    //可以添加提交验证
+                    search[field.name] = field.value;
+                });
+                //参数转为json字符串，并赋给search变量 ,JSON.stringify <ie7不支持，有第三方解决插件
+                params.search = JSON.stringify(search)
+                console.info(params);
+                return params;
+            }
+
+            $('#grid').bootstrapTable('refresh', params)
+            console.info(params);
+        });
+
+
+        $('#save').click(function () {
+            $.ajax
+            ({
+                url: "/hhb/insert",
+                dataType: "json",
+                type: "post",
+                data: {
+                    user_name: $("#user_name").val(),
+                    user_email: $("#user_email").val(),
+                    password: $("#password").val(),
+                    phone: $("#phone").val(),
+                },
+                success: function (data) {
+                    console.log(data);  //在console中查看数据
+                }
+            });
+             $("#user_name").val("");
+               $("#user_email").val("");
+               $("#password").val("");
+              $("#phone").val("");
+            $('#myModal').modal('hide')
+            $('#grid').bootstrapTable('refresh', {})
+        });
+
+    });
+
+    //初始化bootstrap-table的内容
+    function InitMainTable() {
+        var $table;
+        //记录页面bootstrap-table全局变量$table，方便应用
+        var queryUrl = '/hhb/userData?'
+        $table = $('#grid').bootstrapTable({
+            url: queryUrl,                      //请求后台的URL（*）
+            method: 'GET',                      //请求方式（*）
+            //toolbar: '#toolbar',              //工具按钮用哪个容器
+            striped: true,                      //是否显示行间隔色
+           // cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+            pagination: true,                   //是否显示分页（*）
+            sortable: true,                     //是否启用排序
+            sortOrder: "asc",                   //排序方式
+            sidePagination: "server",           //分页方式：client客户端分页，server服务端分页（*）
+            pageNumber: 1,                      //初始化加载第一页，默认第一页,并记录
+            pageSize: 10,                     //每页的记录行数（*）
+            pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
+            search: false,                      //是否显示表格搜索
+            strictSearch: true,
+            showColumns: true,                  //是否显示所有的列（选择显示的列）
+            showRefresh: true,                  //是否显示刷新按钮
+            minimumCountColumns: 2,             //最少允许的列数
+            clickToSelect: true,                //是否启用点击选中行
+            //height: 500,                      //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
+            uniqueId: "ID",                     //每一行的唯一标识，一般为主键列
+            showToggle: true,                   //是否显示详细视图和列表视图的切换按钮
+            cardView: false,                    //是否显示详细视图
+            detailView: false,                  //是否显示父子表
+            //得到查询的参数
+            queryParams: function (params) {
+                //这里的键的名字和控制器的变量名必须一直，这边改动，控制器也需要改成一样的
+                var temp = {
+                    rows: params.limit,                         //页面大小
+                    page: (params.offset / params.limit) + 1,   //页码
+                    sort: params.sort,      //排序列名
+                    sortOrder: params.order, //排位命令（desc，asc）
+                    email: $("#email").val(),
+                    user_name: $("#userName").val()
+                };
+                return temp;
+            },
+            columns: [{
+                checkbox: true,
+                visible: true                  //是否显示复选框
+            }, {
+                field: 'user_name',
+                title: '姓名',
+                sortable: true
+            }, {
+                field: 'phonenumber',
+                title: '手机',
+                sortable: true
+            }, {
+                field: 'email',
+                title: '邮箱',
+                sortable: true,
+
+            }, {
+                field: 'Homepage',
+                title: '主页',
+
+            }, {
+                field: 'refuse_des',
+                title: '状态'
+            }, {
+                field: 'sex',
+                title: '性别',
+                sortable: true
+            }, {
+                field: 'Age',
+                title: '年龄'
+            }, {
+                field: 'update_time',
+                title: 'update_time',
+
+            }, {
+                field: 'password',
+                title: 'password'
+            }, {
+                field: 'user_id',
+                title: 'id',
+                width: 120,
+                align: 'center',
+                valign: 'middle',
+
+            },],
+            onLoadSuccess: function () {
+            },
+            onLoadError: function (e,s) {
+                console.log(e)
+                console.log(s)
+                alert("数据加载失败！");
+            },
+            onDblClickRow: function (row, $element) {
+                var id = row.ID;
+                //EditViewById(id, 'view');
+            },
+        });
+    };
+
+</script>
+</html>

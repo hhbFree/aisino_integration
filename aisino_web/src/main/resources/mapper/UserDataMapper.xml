@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="aisino.web.mapper.IndexMapper">
+    <select id="userData" parameterType="map" resultType="map">
+        select * from sys_user u where 1=1
+        <if test="email !=''and email!=null">
+            and u.email=#{email}
+        </if>
+        <if test="user_name !=''and user_name!=null">
+            and u.user_name=#{user_name}
+        </if>
+    </select>
+
+    <select id="userCount" parameterType="map" resultType="long">
+        select count(*) from sys_user u where 1=1
+        <if test="email !=''and email!=null">
+            and u.email=#{email}
+        </if>
+        <if test="user_name !=''and user_name!=null">
+            and u.user_name=#{user_name}
+        </if>
+    </select>
+
+    <insert id="insert" parameterType="map">
+        insert into sys_user(user_name,email,phonenumber,password,create_time,update_time) value(#{user_name,jdbcType=VARCHAR},#{user_email,jdbcType=VARCHAR},#{phone,jdbcType=VARCHAR},#{password,jdbcType=VARCHAR},now(),now())
+    </insert>
+</mapper>
