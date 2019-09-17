@@ -49,4 +49,11 @@ public class IndexController {
         return "aisino/layout";
     }
 
+
+    @RequestMapping("idnex")
+    public String idnex(){
+        return "aisino/index";
+    }
+
+
 }

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Websocket Server</title>
+
+
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/3.3.5/css/bootstrap.min.css}"/>
+
+    <link rel="stylesheet" type="text/css"
+          th:href="@{/bootstrap_table/css/style.css}"/>
+
+    <script th:src="@{/webjars/jquery/3.1.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/3.3.5/js/bootstrap.min.js}"></script>
+    <script th:src="@{/bootstrap_table/js/ws/scripts.js}"></script>
+
+
+</head>
+<button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#mymodal-data" type="button">关于</button>
+<br>
+<br>
+
+<!-- 模态弹出窗内容 -->
+<div class="modal" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">
+                    <span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                </button>
+                <h4 class="modal-title">关于本网站</h4>
+            </div>
+            <div class="modal-body">
+                <p>使用技术:</p>
+                <p>jQuery,Bootstrap,Javascript,websocket</p>
+                <p>服务器:</p>
+                <p>Tomcat 7 (JBoss EWS 2.0)</p>
+                <p>源码:</p>
+                <p>https://github.com/mikethehammer53/chatroom</p>
+                <p>联系作者:</p>
+                <p>mike.chen53@gmail.com</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                <!-- <button type="button" class="btn btn-primary">保存</button> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-6 col-md-offset-3">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">聊天室</h3>
+        </div>
+        <div class="panel-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 ">
+                        <div class="panel panel-default">
+                            <div class="tabbable" id="tabs-359364">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a id="publicMode" href="#panel-public" data-toggle="tab" onclick="publicMode()">公开</a></li>
+                                    <li><a id="privateMode" href="#panel-private" data-toggle="tab" onclick="privateMode()">私聊</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="panel-public">
+                                        <br>
+                                        <div class="tab-pane" id="dis_public" style="height: 300px; overflow-y: scroll"></div>
+                                        <br> <input class="btn btn-sm" id="clr_pub" type="button" value="清除记录">
+                                    </div>
+                                    <div class="tab-pane" id="panel-private">
+                                        <br>
+                                        <div class="tab-pane" id="dis_private" style="height: 300px; overflow-y: scroll"></div>
+                                        <br> <input class="btn btn-sm" id="clr_pri" type="button" value="清除记录">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="panel panel-default">
+                            <div class="tabbable" id="tabs-501853">
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#panel-connect" data-toggle="tab">登录</a></li>
+                                    <li><a href="#panel-userList" data-toggle="tab">用户列表</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="panel-connect">
+                                        <p>
+                                        <div id="input">
+                                            用户名:<input class="input-tiny" id="user" type="text" width="50px"> <input class="btn btn-sm" type="button" id="btnConnection"
+                                                                                                                     value="连接" />
+                                        </div>
+                                        <div id="logged" style="display: none;">
+                                            已作为<label style="color: blue" id="lable"></label>登录 <input class="btn btn-sm" type="button" id="btnClose" value="断开" disabled="disabled" />
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="panel-userList">
+                                        <ul id="userListUl" class="list-group" style="max-height: 330px; overflow-y: scroll">
+
+                                        </ul>
+                                        <button onclick='getUserList();'>立即刷新</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div >
+                <div id="targetdiv" style="display: none;">	目标:<input class="input-small" id="target" type="text"><br> <br></div>
+                <textarea class="form-control" id="msg" placeholder="输入你想发送的信息" rows="5" maxlength="200"></textarea>
+                <h6 class="pull-right" id="count_message"></h6>
+                <input class="btn btn-info" type="button" id="btnSend" value="发送" disabled="disabled" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
