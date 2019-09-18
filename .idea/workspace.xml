@@ -2,34 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="08c50d7d-ecbf-4d80-9af2-920a9917e158" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/data/UserData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/MessageDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/MessageDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/PersonDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/vo/Address.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/vo/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/vo/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/vo/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandshakeInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/WebSocketConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/ws/scripts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/test/java/aisino/inter/TestMessageDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aisino_web/src/test/java/aisino/inter/TestSpringMongo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/web/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/aisino_web/src/main/java/aisino/web/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisino_web/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aisino_web/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisino_web/target/classes/aisino/web/controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/aisino_web/target/classes/aisino/web/controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aisino_web/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/aisino_web/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/ws/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/ws/scripts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -46,20 +21,21 @@
     <session id="-59028113">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="4" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="21" />
-          <entry key="html" value="459" />
+          <entry key="html" value="467" />
           <entry key="java" value="693" />
-          <entry key="js" value="146" />
+          <entry key="js" value="348" />
           <entry key="properties" value="27" />
           <entry key="txt" value="8" />
           <entry key="xml" value="280" />
@@ -67,9 +43,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="459" />
+          <entry key="HTML" value="467" />
           <entry key="JAVA" value="693" />
-          <entry key="JavaScript" value="146" />
+          <entry key="JavaScript" value="348" />
           <entry key="PLAIN_TEXT" value="29" />
           <entry key="Properties" value="27" />
           <entry key="SQL" value="8" />
@@ -80,12 +56,12 @@
         <counts>
           <entry key="class" value="23" />
           <entry key="css" value="3" />
-          <entry key="html" value="10" />
-          <entry key="java" value="102" />
+          <entry key="html" value="12" />
+          <entry key="java" value="107" />
           <entry key="js" value="9" />
           <entry key="properties" value="4" />
           <entry key="ts" value="3" />
-          <entry key="xml" value="9" />
+          <entry key="xml" value="10" />
           <entry key="yml" value="3" />
         </counts>
       </usages-collector>
@@ -93,12 +69,12 @@
         <counts>
           <entry key="CLASS" value="23" />
           <entry key="CSS" value="3" />
-          <entry key="HTML" value="10" />
-          <entry key="JAVA" value="102" />
+          <entry key="HTML" value="12" />
+          <entry key="JAVA" value="107" />
           <entry key="JavaScript" value="9" />
           <entry key="Properties" value="4" />
           <entry key="TypeScript" value="3" />
-          <entry key="XML" value="9" />
+          <entry key="XML" value="10" />
           <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
@@ -110,24 +86,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/MessageDAO.java">
+        <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+            <state relative-caret-position="48">
+              <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
               <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/PersonDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-167">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#html#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#html#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/ws/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
+            <state relative-caret-position="155">
+              <caret line="209" column="23" selection-start-line="209" selection-start-column="23" selection-end-line="209" selection-end-column="23" />
               <folding>
                 <element signature="n#style#0;n#h6#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#h6#0;n#!!top" expanded="true" />
@@ -147,10 +112,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="831">
-              <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
+            <state relative-caret-position="50">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -161,20 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/MessageController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="34" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="34" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-334">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="50">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,8 +147,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/MessageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            <state relative-caret-position="50">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,10 +157,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/WebSocketConfig.java">
+        <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+            <state relative-caret-position="50">
+              <caret line="43" selection-start-line="43" selection-end-line="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/redis/inter/MyResponseBodyAdvice.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="50">
+              <caret line="34" selection-start-line="34" selection-end-line="34" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,11 +183,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandshakeInterceptor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state relative-caret-position="124">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/vo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -238,8 +221,14 @@
       <find>socket.send</find>
       <find>append2MsgDisPub</find>
       <find>$.ajax</find>
-      <find>ajax</find>
       <find>socket.</find>
+      <find>user</find>
+      <find>getUserList</find>
+      <find>targetdiv</find>
+      <find>panel-private</find>
+      <find>dis_private</find>
+      <find>ajax</find>
+      <find>目标</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -279,7 +268,6 @@
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/redis/inter/MyResponseBodyAdvice.java" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/redis/inter/RedisCacheInterceptor.java" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/redis/config/RedisClusterConfig.java" />
-        <option value="$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/index.html" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/web/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/vo/Person.java" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/PersonDao.java" />
@@ -297,9 +285,10 @@
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandler.java" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/MessageService.java" />
-        <option value="$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/ws/scripts.js" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/MessageController.java" />
         <option value="$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/ws/scripts.js" />
+        <option value="$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/index.html" />
       </list>
     </option>
   </component>
@@ -347,7 +336,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -372,88 +360,6 @@
               <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-              <item name="mongo" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-              <item name="webSocket" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
@@ -505,64 +411,12 @@
               <item name="js" type="462c0819:PsiDirectoryNode" />
               <item name="ws" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="aisino_integration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="aisino_integration" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino_web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="aisino" type="462c0819:PsiDirectoryNode" />
-              <item name="inter" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -574,7 +428,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568710074980" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568717580527" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -718,7 +572,8 @@
       <workItem from="1568191109746" duration="33443000" />
       <workItem from="1568594472067" duration="5462000" />
       <workItem from="1568679465013" duration="73000" />
-      <workItem from="1568680364313" duration="15122000" />
+      <workItem from="1568680364313" duration="19486000" />
+      <workItem from="1568766499339" duration="3075000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交">
       <created>1568285996311</created>
@@ -727,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568285996312</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="第一次提交">
+      <created>1568710171020</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568710171020</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -763,7 +625,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54100000" />
+    <option name="totallyTimeSpent" value="61539000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -776,19 +638,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7628866" visible="true" weight="0.20179948" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.9068826" visible="true" weight="0.20437019" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.2371134" side_tool="true" visible="true" weight="0.20179948" />
+      <window_info id="Favorites" order="5" sideWeight="0.09311741" side_tool="true" weight="0.20179948" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2145749" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.60728747" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.7273954" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.022941971" />
@@ -865,6 +728,30 @@
           <line>27</line>
           <properties />
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/UserController.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/UserController.java</url>
+          <line>26</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/MessageController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/MessageService.java</url>
+          <line>24</line>
+          <properties />
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -957,16 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/redis/inter/MyResponseBodyAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="69" column="89" selection-start-line="69" selection-start-column="82" selection-end-line="69" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/css/bootstrap-theme.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -997,10 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="85" column="16" selection-start-line="85" selection-start-column="16" selection-end-line="85" selection-end-column="16" />
-          <folding>
-            <element signature="e#2113#2114#0" expanded="true" />
-            <element signature="e#2143#2144#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1018,9 +891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="416">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1028,13 +898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="16" column="61" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="45" column="21" lean-forward="true" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1083,10 +946,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="232">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-          <folding>
-            <element signature="e#668#669#0" expanded="true" />
-            <element signature="e#703#704#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1094,11 +953,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="302">
           <caret line="54" column="68" selection-start-line="54" selection-start-column="61" selection-end-line="54" selection-end-column="68" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1682#1683#0" expanded="true" />
-            <element signature="e#1765#1766#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1116,24 +970,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/data/UserData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-websocket/5.0.9.RELEASE/spring-websocket-5.0.9.RELEASE.jar!/org/springframework/web/socket/handler/ExceptionWebSocketHandlerDecorator.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="34" selection-start-line="34" selection-end-line="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/vo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1144,13 +984,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2256">
-          <caret line="23" column="4" lean-forward="true" selection-start-line="23" selection-start-column="4" selection-end-line="23" selection-end-column="4" />
         </state>
       </provider>
     </entry>
@@ -1165,9 +998,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="301">
           <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1175,26 +1005,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
           <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandshakeInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1212,56 +1022,70 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="283" column="30" selection-start-line="283" selection-start-column="26" selection-end-line="283" selection-end-column="30" />
-          <folding>
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="121" column="11" lean-forward="true" selection-start-line="121" selection-start-column="11" selection-end-line="135" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="831">
-          <caret line="47" column="45" selection-start-line="47" selection-start-column="45" selection-end-line="47" selection-end-column="45" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/ws/scripts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#h6#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h6#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/PersonDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-167">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="15">
+          <caret line="25" column="57" selection-start-line="25" selection-start-column="57" selection-end-line="25" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3640">
+          <caret line="140" column="39" selection-start-line="140" selection-start-column="11" selection-end-line="140" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/data/UserData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/vo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="45" column="21" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/static/bootstrap_table/js/ws/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="209" column="23" selection-start-line="209" selection-start-column="23" selection-end-line="209" selection-end-column="23" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h6#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/MessageController.java">
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/resources/templates/aisino/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="34" column="5" lean-forward="true" selection-start-line="17" selection-start-column="3" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="48">
+          <caret line="116" column="16" selection-start-line="116" selection-start-column="16" selection-end-line="116" selection-end-column="16" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#html#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#html#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandshakeInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1270,8 +1094,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-334">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        <state relative-caret-position="50">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/mongo/service/impl/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/redis/inter/MyResponseBodyAdvice.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aisino_web/src/main/java/aisino/webSocket/config/MessageHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

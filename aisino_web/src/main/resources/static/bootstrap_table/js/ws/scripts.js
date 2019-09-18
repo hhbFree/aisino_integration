@@ -45,7 +45,7 @@ $(function() {
 					logged=true;
 					mode="broadcast";
 					$("#targetdiv").hide();
-					setInterval("getUserList()", 5000);
+					//setInterval("getUserList()", 5000);
 				};
 				//获得消息事件
 				socket.onmessage = function(msg) {
@@ -159,24 +159,27 @@ $(function() {
 //获得用户列表
 function getUserList(){
     $.ajax({
-        url: "/message",
+        url: "/user/list",
         dataType: "json",
-        type: "post",
+        type: "get",
         data: {
-            user_name: $("#user_name").val(),
-            user_email: $("#user_email").val(),
-            password: $("#password").val(),
-            phone: $("#phone").val(),
+            fromId: $("#user").val()
         },
         success: function (data) {
             console.log(data);  //在console中查看数据
+            append2UserList(data);
         }
     });
 }
 
 //插入用户列表
-function append2UserList(user){
-	$("#userListUl").append("<li class='list-group-item'>"+user+"</li>");
+function append2UserList(userList){
+    $("#userListUl").html("");
+    for (var i = 0; i <userList.length ; i++) {
+        $("#userListUl").append("<li class='list-group-item' onclick='changeUser("+userList[i].id+")'>"+userList[i].username+"</li>");
+
+    }
+
 }
 //插入消息显示
 function append2MsgDisPub(head,message){
@@ -201,4 +204,26 @@ function privateMode(){
 };
 function alertMode(){
 	alert(logged+","+mode);
+}
+
+function changeUser(id) {
+	$("#target").val(id)
+    $.ajax({
+        url: "/message/history",
+        dataType: "json",
+        type: "get",
+        data: {
+            fromId: $("#user").val(),
+            toId: id,
+        },
+        success: function (msg) {
+            $("#dis_private").html("")
+            for (var i = 0; i <msg.length ; i++) {
+
+                append2MsgDisPri(getTime() + " " + msg[i].from.username + " to " + msg[i].to.username, msg[i].msg);
+            }
+        }
+    });
+
+
 }

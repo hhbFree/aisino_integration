@@ -64,8 +64,8 @@
                         <div class="panel panel-default">
                             <div class="tabbable" id="tabs-359364">
                                 <ul class="nav nav-tabs">
-                                    <li class="active"><a id="publicMode" href="#panel-public" data-toggle="tab" onclick="publicMode()">公开</a></li>
-                                    <li><a id="privateMode" href="#panel-private" data-toggle="tab" onclick="privateMode()">私聊</a></li>
+                                    <li><a id="publicMode" href="#panel-public" data-toggle="tab" onclick="publicMode()">公开</a></li>
+                                    <li class="active"><a id="privateMode" href="#panel-private" data-toggle="tab" onclick="privateMode()">私聊</a></li>
                                 </ul>
                                 <div class="tab-content">
                                     <div class="tab-pane active" id="panel-public">
@@ -114,7 +114,7 @@
             </div>
             <hr>
             <div >
-                <div id="targetdiv" style="display: none;">	目标:<input class="input-small" id="target" type="text"><br> <br></div>
+                <input class="input-small" id="target" type="hidden">
                 <textarea class="form-control" id="msg" placeholder="输入你想发送的信息" rows="5" maxlength="200"></textarea>
                 <h6 class="pull-right" id="count_message"></h6>
                 <input class="btn btn-info" type="button" id="btnSend" value="发送" disabled="disabled" />
